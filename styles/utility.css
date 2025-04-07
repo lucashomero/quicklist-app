@@ -48,7 +48,7 @@
 .card-input {
     width: 30rem;
     height: 2.75rem;
-    padding: 0.25rem;
+    padding: 0.25rem 1rem;
     background-color: var(--background-secondary);
     border-radius: 12px;
     font-family: var(--ff-sans);
@@ -83,21 +83,55 @@
     
 }
 
-.card-item {
+/* .card-item {
 
     width: 40rem;
-    /* height: 2.75rem; */
-    /* padding: 0.25rem; */
 
     background-color: var(--background-secondary);
     border-radius: 12px;
     padding: 0.75rem 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-base);
+    color: var(--content-primary);
+    border: solid 1px var(--content-tertiary);
+  } */
+  
+  .card-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--background-secondary);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
     font-family: var(--ff-sans);
     font-size: var(--fs-base);
     font-weight: var(--fw-base);
     color: var(--content-primary);
     border: solid 1px var(--content-tertiary);
   }
-  
 
+
+
+
+  .check {
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .lixeira {
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .texto-item {
+    flex: 1;
+  }
+  
+  .feito {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
