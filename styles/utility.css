@@ -10,18 +10,23 @@
     padding-block: var(--py-xl);
 }
 
+.py-2xl {
+    padding-block: var(--py-2xl);
+}
+
 .px-lg {
     padding-inline: var(--px-lg);
 }
 
-.flex-column{
-    display: flex;
-    flex-direction: column;
+.px-xl {
+    padding-inline: var(--px-xl);
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: row;
+    justify-content: center;   /* Centraliza horizontalmente os itens */
+    align-items: center;       /* Centraliza verticalmente os itens */
 }
 
 .grid {
@@ -33,8 +38,66 @@
 }
 
 .container {
-    width: 100%;
+    width: 40rem;
     margin-inline: auto;
+    /* margin: 1rem; */
     gap: 1rem;
+    justify-content: center;
+}
+
+.card-input {
+    width: 30rem;
+    height: 2.75rem;
+    padding: 0.25rem;
+    background-color: var(--background-secondary);
+    border-radius: 12px;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-base);
+    color: var(--content-tertiary);
+    border-color: var(--content-tertiary);
+
+    border: solid 1px; /* remova estilos padrões */
+    box-sizing: border-box; /* garante que height inclua o padding */
+}
+
+.card-input:focus {
+    font-family: var(--ff-sans);
+    color: var(--content-primary);
+}
+
+.btn-card {
+    width: 10rem;
+    height: 2.75rem;
+    padding: 0 1rem;
+    background-color: var(--color-brand);
+    border-radius: 12px;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-base);
+    color: var(--always-white);
+    cursor: pointer;
+
+    border: none; /* remova estilos padrões */
+    box-sizing: border-box; /* garante que height inclua o padding */
     
 }
+
+.card-item {
+
+    width: 40rem;
+    /* height: 2.75rem; */
+    /* padding: 0.25rem; */
+
+    background-color: var(--background-secondary);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--ff-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-base);
+    color: var(--content-primary);
+    border: solid 1px var(--content-tertiary);
+  }
+  
+
