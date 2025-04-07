@@ -1,0 +1,66 @@
+*{
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root{
+
+--background-primary: #F4F5FB;
+--background-secondary: #FFFFFF;
+
+--color-brand: #CA3884;
+--color-brand-hover: #A52C6B;
+--color-danger: #C93847;
+
+--content-primary: #080B12;
+--content-secondary: #374151;
+--content-tertiary: #9CA3AF;
+--always-white: #FFFFFF;
+
+--border-hover: #B9C2D0;
+--border-primary: #D1D5DB;
+
+--ff-sans: 'Inter', system-ui, sans-serif; 
+--fw-base: 500;
+--fw-md: 600;
+--fw-bold: 800;
+
+--fs-sm: 0.875rem; /* link  */
+--fs-base: 1rem; /*  p, label  */
+--fs-lg: 1.5rem; /* title */
+
+--px-lg:1.5rem;
+     
+--py-base:1rem;
+--py-lg:1.5rem;
+--py-xl:3rem;
+
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-base);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    color: var(--content-primary);
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+    color: var(--text-color-primary);
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.04em; /* espaçamento entre os caracteres de um texto */
+}
+
+h1 {
+    font-size: var(--fs-lg);
+}
